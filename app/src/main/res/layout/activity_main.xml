@@ -10,66 +10,67 @@
         android:id="@+id/verticalLL"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
 
         <LinearLayout
             android:id="@+id/topLL"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_height="200dp"
             android:background="#9E0909"
             android:orientation="horizontal">
 
             <ImageButton
+                android:id="@+id/player1"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:src="@drawable/cat_player1" />
+
+            <ImageButton
+                android:id="@+id/player2"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:src="@drawable/cat_player2" />
+
+            <ImageButton
                 android:id="@+id/player3"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="200dp"
                 android:layout_weight="1"
-                tools:src="@tools:sample/avatars" />
+                android:src="@drawable/cat_player3" />
+
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/topLowerLL"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="184dp"
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/player2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                tools:src="@tools:sample/avatars" />
-
-            <ImageButton
                 android:id="@+id/discardPile"
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:scaleType="fitCenter"
+                android:layout_width="605dp"
+                android:layout_height="188dp"
+                android:scaleType="fitEnd"
                 android:src="@drawable/exploading_kitten_back" />
 
 
             <ImageButton
                 android:id="@+id/drawPile"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:scaleType="fitCenter"
+                android:layout_height="188dp"
+                android:scaleType="fitStart"
                 android:src="@drawable/catermelon" />
 
-            <ImageButton
-                android:id="@+id/player4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                tools:src="@tools:sample/avatars" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/middleLL"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="250dp"
             android:background="#9E0909"
             android:orientation="horizontal">
 
@@ -88,42 +89,38 @@
 
             <ImageButton
                 android:id="@+id/playerCard1"
-                android:layout_width="wrap_content"
-                android:layout_height="300dp"
-                android:layout_weight="1"
+                android:layout_width="200dp"
+                android:layout_height="250dp"
                 android:scaleType="fitCenter"
                 android:scaleX="1"
-                android:scaleY="2.75"
                 android:src="@drawable/skip" />
 
             <ImageButton
                 android:id="@+id/playerCard2"
-                android:layout_width="wrap_content"
-                android:layout_height="300dp"
-                android:layout_weight="1"
+                android:layout_width="200dp"
+                android:layout_height="250dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/defuse" />
 
             <ImageButton
                 android:id="@+id/playerCard3"
-                android:layout_width="wrap_content"
-                android:layout_height="300dp"
-                android:layout_weight="1"
+                android:layout_width="200dp"
+                android:layout_height="250dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/skip" />
 
             <ImageButton
                 android:id="@+id/playerCard4"
-                android:layout_width="wrap_content"
-                android:layout_height="300dp"
+                android:layout_width="200dp"
+                android:layout_height="250dp"
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
                 android:src="@drawable/exploading_kitten" />
 
             <ImageButton
                 android:id="@+id/playerCard5"
-                android:layout_width="wrap_content"
-                android:layout_height="300dp"
+                android:layout_width="200dp"
+                android:layout_height="250dp"
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
                 android:src="@drawable/nope" />
@@ -131,7 +128,6 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:orientation="vertical">
 
                 <Button
@@ -144,36 +140,18 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/bottomLL"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#9E0909"
-            android:orientation="horizontal">
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.5" />
-
-            <TextView
-                android:id="@+id/player1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom|center|center_horizontal"
-                android:layout_weight=".4"
-                android:gravity="bottom|center|fill_horizontal"
-                android:text="Player 1" />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight=".25" />
+            android:layout_height="50dp"
+            android:orientation="vertical">
 
             <Spinner
-                android:id="@+id/spinnerMenu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:id="@+id/spinner"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:background="@drawable/gear"
+                android:gravity="right" />
         </LinearLayout>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
