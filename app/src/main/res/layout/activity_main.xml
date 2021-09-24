@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="#9E0909"
+        android:background="#314723"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="16dp">
 
@@ -19,7 +19,7 @@
             android:id="@+id/topLL"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="#9E0909"
+            android:background="#314723"
             android:orientation="horizontal">
 
             <ImageButton
@@ -52,6 +52,7 @@
             android:id="@+id/topLowerLL"
             android:layout_width="match_parent"
             android:layout_height="184dp"
+            android:background="#314723"
             android:orientation="horizontal">
 
             <ImageButton
@@ -59,6 +60,7 @@
                 android:layout_width="605dp"
                 android:layout_height="188dp"
                 android:scaleType="fitEnd"
+                android:background="#314723"
                 android:src="@drawable/exploading_kitten_back" />
 
 
@@ -67,6 +69,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="188dp"
                 android:scaleType="fitStart"
+                android:background="#314723"
                 android:src="@drawable/catermelon" />
 
         </LinearLayout>
@@ -75,19 +78,21 @@
             android:id="@+id/middleLL"
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:background="#9E0909"
+            android:background="#314723"
             android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#314723"
                 android:orientation="vertical">
 
                 <Button
                     android:id="@+id/handLeft"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:background="#314723"
                     android:text="tab left " />
             </LinearLayout>
 
@@ -97,6 +102,7 @@
                 android:layout_height="250dp"
                 android:scaleType="fitCenter"
                 android:scaleX="1"
+                android:background="#314723"
                 android:src="@drawable/skip" />
 
             <ImageButton
@@ -104,6 +110,7 @@
                 android:layout_width="200dp"
                 android:layout_height="250dp"
                 android:scaleType="fitCenter"
+                android:background="#314723"
                 android:src="@drawable/defuse" />
 
             <ImageButton
@@ -111,6 +118,7 @@
                 android:layout_width="200dp"
                 android:layout_height="250dp"
                 android:scaleType="fitCenter"
+                android:background="#314723"
                 android:src="@drawable/skip" />
 
             <ImageButton
@@ -119,6 +127,7 @@
                 android:layout_height="250dp"
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
+                android:background="#314723"
                 android:src="@drawable/exploading_kitten" />
 
             <ImageButton
@@ -127,17 +136,20 @@
                 android:layout_height="250dp"
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
+                android:background="#314723"
                 android:src="@drawable/nope" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:background="#314723"
                 android:orientation="vertical">
 
                 <Button
                     android:id="@+id/handRight"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:background="#314723"
                     android:text="tab right" />
             </LinearLayout>
 
